@@ -1,0 +1,102 @@
+.item{
+  margin-bottom: 10px;
+  background: var(--content-bg);
+  border-radius: 3px;
+  box-shadow: 0 1px 0 1px var(--content-box-shadow);
+  flex-basis: calc(100% - 10px);
+  flex: 1 0 calc(33.333% - 10px);
+  font-size: .9rem;
+  transition: flex .25s ease;
+  will-change: flex;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  position: relative;
+}
+.title{
+  background: none;
+  border: none;
+  color: inherit;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  margin: 0;
+  padding: 0;
+  text-align: inherit;
+  user-select: none;
+  appearance: auto;
+  writing-mode: horizontal-tb !important;
+  font-style: ;
+  font-variant-ligatures: ;
+  font-variant-caps: ;
+  font-variant-numeric: ;
+  font-variant-east-asian: ;
+  font-weight: ;
+  font-stretch: ;
+  letter-spacing: normal;
+  word-spacing: normal;
+  text-transform: none;
+  text-indent: 0px;
+  text-shadow: none;
+  display: inline-block;
+  align-items: flex-start;
+  box-sizing: border-box;
+}
+.titleH2{
+  transition: border-color .25s ease;
+  flex: 0 0 auto;
+  cursor: pointer;
+  margin: 0 10px;
+  padding: 10px 0 4px;
+  position: relative;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: .825rem;
+  border-bottom: 1px solid var(--label-border-color);
+  color: var(--label-color);
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.titleH2Span{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.titleSvg{
+  color: var(--app-color);
+  font-size: 22px;
+  margin-top: 3px;
+  opacity: .7;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: opacity .1s ease;
+  will-change: opacity;
+}
+.body{
+  flex: 1 1 auto;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+.wrap{
+  bottom: 10px;
+  left: 10px;
+  position: absolute;
+  right: 10px;
+  top: 7px;
+  font-size: .9rem;
+  line-height: 1.5;
+  overflow: auto;
+  overflow-x: hidden;
+}
+.content{
+  overflow: hidden;
+}

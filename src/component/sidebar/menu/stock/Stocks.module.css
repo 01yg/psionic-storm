@@ -1,0 +1,27 @@
+.menu{
+  margin-bottom: 15px;
+}
+.menuTitle{
+  position: relative;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: .825rem;
+  border-bottom: 1px solid var(--label-border-color);
+  color: var(--label-color);
+  font-weight: 600;
+  margin: 0 0 7px;
+  padding: 0 0 4px;
+  text-transform: uppercase;
+  user-select: none;
+}
+.menuTitleSpan{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.stocks{
+  font-size: .825rem;
+  user-select: none;
+  list-style: none;
+}

@@ -1,0 +1,70 @@
+
+.stockLi{
+  align-items: center;
+  cursor: pointer;
+  display: flex;
+  line-height: 1.25;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  background: none;
+  border: none;
+  color: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  margin: 0;
+  padding: 0;
+  text-align: inherit;
+  user-select: none;
+}
+.stockLi:focus-visible{
+  outline: -webkit-focus-ring-color auto 1px;
+}
+.stockRow{
+  border-radius: 3px;
+  padding: 5px 10px;
+  align-items: center;
+  box-sizing: border-box;
+  color: var(--app-color);
+  display: flex;
+  flex: 1 0 auto;
+  position: relative;
+  width: 100%;
+}
+.stockSvg{
+  flex: 0 0 auto;
+  line-height: 1.25;
+  margin-right: 10px;
+  text-align: center;
+  width: 15px;
+}
+.stockRow:focus{
+  outline: none;
+}
+.stockRow:hover{
+  background: var(--bg-0);
+  color: var(--app-color);
+}
+.stockRow:active{
+  background: var(--misc-button-active-bg);
+  color: var(--misc-button-active-color);
+}
+.stockRowActive{
+  background: var(--misc-button-active-bg);
+  color: var(--misc-button-active-color);
+}
+.stockTitle{
+  display: flex;
+  flex: 1 1 auto;
+  overflow: hidden;
+}
+.stockTitleActive{
+  font-weight: 700;
+}
+.stockText{
+  flex: 1 1 auto;
+  overflow: hidden;
+  padding: 1px 0;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

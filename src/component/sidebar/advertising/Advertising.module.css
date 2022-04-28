@@ -1,0 +1,175 @@
+.sidebar {
+  background: var(--bg-1);
+  bottom: 0;
+  box-sizing: border-box;
+  color: var(--app-color);
+  display: flex;
+  flex-direction: column;
+  left: 0;
+  position: absolute;
+  top: 50px;
+  transform: translateX(0);
+  user-select: none;
+  width: 280px;
+}
+.sidebarHeader{
+  display: flex;
+  flex: 1 1 auto;
+  margin-bottom: -2px;
+  overflow: hidden;
+  padding-bottom: 2px;
+}
+.sidebarHeaderIcon{
+  border-bottom-right-radius: 3px;
+  flex: 0 0 50px;
+  margin-bottom: -1px;
+
+  background: var(--bg-0);
+  box-sizing: border-box;
+  overflow: auto;
+  padding: 10px 0;
+  width: 50px;
+
+  display: block;
+}
+.sidebarHeaderIconA{
+  width: 34px;
+  height: 34px;
+  background: var(--misc-button-active-bg);
+  color: var(--misc-button-active-color);
+  display: block;
+  margin: 0 auto 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition: color .15s ease,background .15s ease;
+}
+.sidebarHeaderIconSvg{
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  z-index: 1;
+  stroke: currentcolor;
+  fill: currentcolor;
+  stroke-width: 0;
+  height: 18;
+  width: 18;
+  overflow: hidden;
+  olor: var(--misc-button-active-color);
+  cursor: pointer;
+  text-align: center;
+}
+.sidebarHeaderMenu{
+  box-sizing: border-box;
+  flex: 1 1 auto;
+  margin: 10px 10px 0;
+  overflow: auto;
+  padding: 10px;
+  position: relative;
+
+  background: var(--content-bg);
+  border-radius: 3px;
+  box-shadow: 0 1px 0 1px var(--content-box-shadow);
+  z-index: 1;
+}
+.sidebarHeaderMenuItem{
+  margin-bottom: 15px;
+}
+.sidebarHeaderMenuItemTitle{
+  position: relative;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: .825rem;
+  border-bottom: 1px solid var(--label-border-color);
+  color: var(--label-color);
+  font-weight: 600;
+  margin: 0 0 7px;
+  padding: 0 0 4px;
+  text-transform: uppercase;
+  user-select: none;
+}
+.sidebarHeaderMenuItemTitleSpan{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.sidebarHeaderMenuItemNavs{
+  font-size: .825rem;
+  user-select: none;
+  list-style: none;
+}
+.sidebarHeaderMenuItemNav{
+  align-items: center;
+  cursor: pointer;
+  display: flex;
+  line-height: 1.25;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  background: none;
+  border: none;
+  color: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  margin: 0;
+  padding: 0;
+  text-align: inherit;
+  user-select: none;
+}
+.sidebarBottom{
+  background: var(--content-bg);
+  border-radius: 3px;
+  box-shadow: 0 1px 0 1px var(--content-box-shadow);
+  z-index: 1;
+
+  flex: 0 0 auto;
+  font-size: .8rem;
+  margin: 10px;
+
+  position: relative;
+
+  line-height: 1.4;
+  padding: 10px;
+}
+
+.search {
+  display: flex;
+  flex: 1 1 auto;
+  margin-bottom: -2px;
+  overflow: hidden;
+  padding-bottom: 2px;
+
+  background: var(--bg-0);
+  box-sizing: border-box;
+  overflow: auto;
+  padding: 10px 0;
+  width: 50px;
+}
+
+.navsWrap {
+  box-sizing: border-box;
+  flex: 1 1 auto;
+  margin: 10px 10px 0;
+  overflow: auto;
+  padding: 10px;
+  position: relative;
+}
+
+.navs {
+  margin-bottom: 15px;
+}
+
+.nav {
+  overflow: hidden;
+  position: relative;
+  height: 16px;
+  line-height: 16px;
+  cursor: pointer;
+  display: block;
+  margin: 4px 2px 2px 4px;
+}

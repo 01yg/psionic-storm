@@ -1,0 +1,76 @@
+.contentMain{
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow: hidden;
+  padding: 10px;
+  position: relative;
+}
+.contentMainTop{
+  flex: 0 0 auto;
+  margin-bottom: 10px;
+}
+.contentMainBottom{
+  flex: 1 1 auto;
+  overflow: hidden;
+  position: relative;
+}
+.contentMainBottomWrap{
+  display: flex;
+  flex-direction: column;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.contentMainBottomWrap2{
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+  height: 0;
+  overflow: hidden;
+}
+.contentMainBottomWrapTitle{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: .825rem;
+  border-bottom: 1px solid var(--label-border-color);
+  color: var(--label-color);
+  font-weight: 600;
+  margin: 0 0 7px;
+  padding: 0 0 4px;
+  text-transform: uppercase;
+  user-select: none;
+}
+.contentMainBottomWrapContent{
+  background: var(--input-bg);
+  border: 1px solid var(--input-border-color);
+  border-radius: 3px;
+  box-sizing: border-box;
+  flex: 1 0 auto;
+  font-family: var(--code-font);
+  font-size: .95rem;
+  outline: 0;
+  overflow: hidden;
+  padding: 5px;
+  position: relative;
+  transition: all .2s ease;
+  transition-property: border-color,box-shadow,background;
+  width: 100%;
+}
+.contentMainBottomWrapContentWrap{
+  bottom: 0;
+  left: 0;
+  padding: 5px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 2;
+}
+.card {
+  margin: 0px 0px 8px 0px;
+  padding: 4px;
+}

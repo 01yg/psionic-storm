@@ -1,0 +1,12 @@
+.bodySide{
+  width: 40%;
+  background: var(--bg-1);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  float: right;
+  height: 100%;
+  max-width: 50vw;
+  padding: 10px;
+  position: relative;
+}

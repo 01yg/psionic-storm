@@ -1,0 +1,71 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 32px;
+  background-color: #f56040;
+  background-bottom: 1px solid #000;
+  z-index: 999;
+
+  align-items: center;
+  background: var(--primary-color);
+  box-sizing: border-box;
+  color: var(--app-contrast-color);
+  display: flex;
+  height: 50px;
+  padding: 0 10px;
+  user-select: none;
+}
+.logoA{
+  display: inline-block;
+  font-size: 1.2rem;
+  font-weight: 400;
+  letter-spacing: -1px;
+  line-height: 1;
+  text-transform: lowercase;
+  color: var(--link-color);
+  text-decoration: none;
+}
+.logoEnterprise{
+  color: var(--app-contrast-color);
+  transition: opacity .1s ease;
+  will-change: opacity;
+}
+.logoApp{
+  opacity: .7;
+  color: var(--app-contrast-color);
+  transition: opacity .1s ease;
+  will-change: opacity;
+}
+.logoRewriter{
+  font-size: .7rem;
+  color: var(--app-contrast-color);
+  transition: opacity .1s ease;
+  will-change: opacity;
+}
+.logo {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 32px;
+  padding: 2px 0 0 4px;
+  z-index: 30;
+  overflow: hidden;
+  font-size: 16px;
+  font-weight: bolder;
+  color: #eee;
+}
+
+/*
+  405de6 파랑
+  5851db 파아랑
+  833ab4 보라
+  c13584 자주
+  e1306c 불은자주
+  fd1d1d 주황
+  f56040 연주
+  f77737 연연주
+  fcaf45 노랑주황
+  ffdc80 연틍노랑
+*/

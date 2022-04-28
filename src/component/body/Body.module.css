@@ -1,0 +1,16 @@
+.content {
+  bottom: 0;
+  left: 280px;
+  position: absolute;
+  right: 0;
+  top: 50px;
+  background: var(--bg-0);
+  color: var(--app-color);
+}
+.stocks{
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+}

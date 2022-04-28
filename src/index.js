@@ -1,15 +1,20 @@
 import React from 'react';
 import ReactDOMClient from 'react-dom/client';
 import './index.css';
-import App from './App';
-import App2 from './App2';
+import App3 from './App3';
 import reportWebVitals from './reportWebVitals';
+import { Provider } from 'react-redux';
+import { createStore } from 'redux';
+import rootReducer from './store/index';
 
+const store = createStore(rootReducer);
 const rootNode = document.getElementById('root');
 
 ReactDOMClient.createRoot(rootNode).render(
   <React.StrictMode>
-    <App2 />
+    <Provider store={store}>
+      <App3 />
+    </Provider>
   </React.StrictMode>,
 );
 
