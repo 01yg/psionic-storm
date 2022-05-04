@@ -8,7 +8,7 @@ export default function Stocks() {
   useEffect(() => {
     console.log('useEffect start');
     const dispatchInvesting = () => {
-      fetch('http://18.220.98.204/investing/')
+      fetch('http://20.212.153.248:8080/investing/')
         .then(res => {
           return res.json();
         })
