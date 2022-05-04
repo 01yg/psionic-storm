@@ -25,6 +25,9 @@ export default function Stock({ stock: s }) {
             <div className={`${styles.stockText}`}>
               {stock.stock}
             </div>
+            <div className={`${styles.stockScore}`}>
+              {stock.score}
+            </div>
           </div>
         </div>
       </li>
