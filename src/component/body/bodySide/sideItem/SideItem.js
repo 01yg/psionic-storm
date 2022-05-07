@@ -2,7 +2,7 @@ import styles from './SideItem.module.css'
 import { useSelector } from "react-redux";
 import { Card } from 'react-bootstrap';
 
-export default function SideItem() {
+export default function SideItem({children}) {
   const stock = useSelector((state) => state.stock);
 
   return (
@@ -26,6 +26,7 @@ export default function SideItem() {
         <div className={`${styles.body}`}>
           <div className={`${styles.wrap}`}>
             <div className={`${styles.content}`}>
+              {children}
             </div>
           </div>
         </div>
