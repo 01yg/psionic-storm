@@ -1,0 +1,10 @@
+.wrap{
+  margin: 0 0 6px;
+  background: var(--sub-content-bg);
+  box-shadow: 0 1px 0 1px var(--content-box-shadow);
+  border-radius: 3px;
+  font-size: .825rem;
+  line-height: 1.5;
+  padding: 6px 8px;
+  width: calc(50% - 19px);
+}

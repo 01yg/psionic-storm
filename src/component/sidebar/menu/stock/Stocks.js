@@ -3,8 +3,8 @@ import styles from './Stocks.module.css'
 import Stock from "./item/Stock";
 
 export default function Stocks() {
-  //const server = '20.212.153.248:8080';
-  const server = 'localhost:8080';
+  const server = '20.212.153.248:8080';
+  //const server = 'localhost:8080';
   const [investings, setInvestings] = useState([]);
 
   useEffect(() => {

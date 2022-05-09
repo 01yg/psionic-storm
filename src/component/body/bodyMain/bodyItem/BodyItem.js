@@ -1,4 +1,5 @@
 import styles from './BodyItem.module.css';
+import Buy from './Buy';
 
 export default function BodyItem() {
   return (
@@ -7,13 +8,15 @@ export default function BodyItem() {
         <div className={`${styles.title}`}>
           <h2 className={`${styles.h2}`}>
             <div className={`${styles.span}`}>
-              Expression
+              매수 추천
             </div>
           </h2>
         </div>
         <div className={`${styles.body}`}>
           <div className={`${styles.bodyWrap}`}>
-            <input type="text" />
+            <Buy/><Buy/><Buy/>
+            <Buy/><Buy/><Buy/>
+            <Buy/><Buy/><Buy/>
           </div>
         </div>
       </div>

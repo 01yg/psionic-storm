@@ -20,8 +20,8 @@ export default function Stock({ stock: s }) {
         className={`${styles.stockLi}`}
         onClick={() => onClickStock(stock)}
       >
-        <div className={`${styles.stockRow} ${stock.stock == selectStock.value.stock ? styles.stockRowActive : ''}`}>
-          <div className={`${styles.stockTitle} ${stock.stock == selectStock.value.stock ? styles.stockTitleActive : ''}`}>
+        <div className={`${styles.stockRow} ${stock.stock === selectStock.value.stock ? styles.stockRowActive : ''}`}>
+          <div className={`${styles.stockTitle} ${stock.stock === selectStock.value.stock ? styles.stockTitleActive : ''}`}>
             <div className={`${styles.stockText}`}>
               {stock.stock}
             </div>
@@ -30,7 +30,7 @@ export default function Stock({ stock: s }) {
             </div>
           </div>
 
-          <div className={`${styles.stockPrice} ${stock.stock == selectStock.value.stock ? styles.stockTitleActive : ''}`}>
+          <div className={`${styles.stockPrice} ${stock.stock === selectStock.value.stock ? styles.stockTitleActive : ''}`}>
             <div className={`${styles.stockText}`}>
               현재가 {stock.current}
             </div>

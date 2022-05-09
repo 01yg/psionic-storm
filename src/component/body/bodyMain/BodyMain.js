@@ -15,7 +15,7 @@ export default function BodyMain() {
           <div className={`${styles.contentMainBottomWrap}`}>
             <div className={`${styles.contentMainBottomWrap2}`}>
               <div className={`${styles.contentMainBottomWrapTitle}`}>
-                TEST STRING
+                매도 추천
               </div>
               <div className={`${styles.contentMainBottomWrapContent}`}>
                 <div className={`${styles.contentMainBottomWrapContentWrap}`}>

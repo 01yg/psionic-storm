@@ -43,7 +43,7 @@
     cursor: pointer;
     font-weight: 700;
     opacity: .5;
-    padding: 6px 0 6px 8px;
+    padding: 6px 6px 0px 6px;
     user-select: none;
     background: none;
     border: none;
@@ -54,4 +54,8 @@
     margin: 0;
     text-align: inherit;
     flex: 1 1 100%;
+
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
