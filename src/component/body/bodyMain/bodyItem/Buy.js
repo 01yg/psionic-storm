@@ -1,4 +1,5 @@
 import styles from './Buy.module.css';
+
 import {
   Chart as ChartJS,
   CategoryScale,
@@ -20,7 +21,7 @@ ChartJS.register(
   Legend
 )
 
-export default function Buy() {
+export default function Buy(props) {
   const data = {
     labels: ["5분", "15분", "30분", "1시간", "5시간", "일간", "주간", "월간"],
     datasets: [
@@ -36,10 +37,46 @@ export default function Buy() {
   };
 
   const options = {
+  scaleFontColor: 'red',
+          responsive: true,
+          tooltips: {
+              mode: 'single',
+          },
+    scaleShowLabels: false,
     scales: {
       xAxes: [{
+        display: false,
+        ticks: {
+          display: false,
+          fontColor : 'rgba(12, 13, 13, 1)',
+          fontSize : 14,
+        },
+        scaleLabel: {
+          display: false,
+        },
         gridLines: {
+          display: false,
           drawBorder: false,
+        },
+        scaleLabel: {
+          display: false,
+          fontColor: "green",
+        },
+      }],
+      yAxes: [{
+        display: false,
+        ticks: {
+          display: false,
+        },
+        scaleLabel: {
+          display: false,
+        },
+        gridLines: {
+          display: false,
+          drawBorder: false,
+        },
+        scaleLabel: {
+          display: false,
         },
       }],
     },
@@ -47,6 +84,9 @@ export default function Buy() {
       legend: {
         display: false,
       },
+      datalabels: {
+        display: false,
+      }
     },
   };
 
@@ -54,7 +94,7 @@ export default function Buy() {
     <>
       <div className={`${styles.wrap}`}>
         <strong>
-          영풍제지
+          {props.stock.stock}
         </strong>
 
         <Bar data={data} options={options} />

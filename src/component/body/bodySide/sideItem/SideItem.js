@@ -1,9 +1,7 @@
 import styles from './SideItem.module.css'
-import { useSelector } from "react-redux";
 import { Card } from 'react-bootstrap';
 
 export default function SideItem({children}) {
-  const stock = useSelector((state) => state.stock);
 
   return (
     <>

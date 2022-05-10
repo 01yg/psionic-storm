@@ -1,20 +1,23 @@
 import { useEffect, useState } from 'react';
+import { useDispatch } from "react-redux";
 import styles from './Stocks.module.css'
 import Stock from "./item/Stock";
+import { set } from "store/stocks";
 
 export default function Stocks() {
-  const server = '20.212.153.248:8080';
-  //const server = 'localhost:8080';
+  //const server = '20.212.153.248:8080';
+  const server = 'localhost:8080';
   const [investings, setInvestings] = useState([]);
+  const dispatch = useDispatch();
 
   useEffect(() => {
-    console.log('useEffect start');
     const dispatchInvesting = () => {
       fetch(`http://${server}/investing/`)
         .then(res => {
           return res.json();
         })
         .then(data => {
+          dispatch(set(data));
           setInvestings(data);
         });
     }

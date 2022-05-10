@@ -38,6 +38,7 @@
   transition: all .2s ease;
   transition-property: border-color,box-shadow,background;
   width: 100%;
+
 }
 .bodyWrap{
     cursor: pointer;

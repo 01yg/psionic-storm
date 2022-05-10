@@ -1,7 +1,18 @@
 import styles from './BodyItem.module.css';
 import Buy from './Buy';
+import { useEffect, useState } from 'react';
+import { useSelector } from "react-redux";
 
 export default function BodyItem() {
+  const [topStocks, setTopStocks] = useState([]);
+  const stocks = useSelector((state) => state.stocks);
+
+  useEffect(() => {
+    setTopStocks(stocks.value.filter((stock) => {
+      return stock.score === 1075;
+    }));
+  },[]);
+
   return (
     <>
       <div className={`${styles.item}`}>
@@ -14,9 +25,9 @@ export default function BodyItem() {
         </div>
         <div className={`${styles.body}`}>
           <div className={`${styles.bodyWrap}`}>
-            <Buy/><Buy/><Buy/>
-            <Buy/><Buy/><Buy/>
-            <Buy/><Buy/><Buy/>
+            {topStocks.map(stock => (
+              <Buy stock={stock}/>
+            ))}
           </div>
         </div>
       </div>
